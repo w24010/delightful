@@ -57,7 +57,7 @@ export default function HomePage() {
       <section className="py-12">
         <div className="container mx-auto px-4">
           <h3 className="text-2xl font-bold mb-8">Popular Categories</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {[
               {
                 name: "Pizza",
@@ -82,6 +82,24 @@ export default function HomePage() {
                 image: "/sweet-dessert.png",
                 color: "bg-pink-100",
                 href: "/restaurant/marios-italian#Desserts",
+              },
+              {
+                name: "Pasta",
+                image: "/creamy-fettuccine-alfredo.png",
+                color: "bg-yellow-100",
+                href: "/restaurant/marios-italian#Pasta",
+              },
+              {
+                name: "Curries",
+                image: "/butter-chicken-creamy.png",
+                color: "bg-orange-100",
+                href: "/restaurant/spice-garden#Curries",
+              },
+              {
+                name: "Ramen",
+                image: "/tonkotsu-ramen-rich.png",
+                color: "bg-blue-100",
+                href: "/restaurant/fresh-sushi#Ramen",
               },
             ].map((category) => (
               <Link key={category.name} href={category.href}>
